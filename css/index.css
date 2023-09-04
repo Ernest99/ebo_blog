@@ -11,6 +11,7 @@
 :root{
     --white: #fff;
     --black: #000;
+    --gray: #B0AFAF;
 }
 /* Header section */
 header{
@@ -39,6 +40,10 @@ nav{
 .navLinks ul li a{
     color: var(--black);
     font-weight: 500;
+    transition: transform 0.3s;
+}
+.navLinks ul li a:hover{
+    transform: scale(1.2) !important;
 }
 .searchBtn input{
     background: transparent;
@@ -49,15 +54,68 @@ nav{
 }
 .searchBtn input::placeholder{
     color: var(--black);
-    font-weight: 500;
+    font-weight: 600;
 }
 .bi-search{
     font-weight: 600;
     cursor: pointer;
+}
+.menuBar{
+    display: none;
+}
+.menuBar i{
+    font-size: 30px;
+    font-weight: 900;
 }
 .content{
     margin-top: 8rem;
 }
 .content h1{
     font-size: 4.5rem;
+}
+.content > p{
+    color: var(--gray);
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.btn button{
+    padding: 15px 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--black);
+    background: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+.socials{
+    margin-top: 3.5rem;
+}
+.social_media button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--white);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+.social_media button:hover{
+    transform: scale(1.2);
+}
+.social_media button i{
+    font-size: 20px;
+}
+@media (max-width: 737px){
+    .navLinks, .searchBtn{
+        display: none;
+    }
+    .menuBar{
+        display: block;
+    }
+    .content h1{
+        font-size: 3rem;
+        line-height: 1;
+        padding-bottom: 15px;
+    }
 }
