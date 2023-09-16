@@ -7,17 +7,22 @@
     list-style: none;
     text-decoration: none;
     font-family: 'montserrat';
+    scroll-behavior: smooth;
 }
 :root{
     --white: #fff;
     --black: #000;
     --gray: #B0AFAF;
+    --yellow: #dba34e;
+}
+img{
+    width: 100%;
 }
 /* Header section */
 header{
     width: 100%;
     height: 100vh;
-    background: url('../asset/bg_1.jpg');
+    background: url('../asset/new_bg.jpg');
     background-size: cover;
 }
 .paddy{
@@ -106,6 +111,107 @@ nav{
 .social_media button i{
     font-size: 20px;
 }
+
+/* Blog section */
+.blog_caption{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px 0;
+
+}
+.blog_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog_r .blog_img{
+    width: 100%;
+    max-width: 650px;
+
+}
+
+.title .num{
+    font-size: 8rem;
+}
+.title .text{
+    color: var(--yellow);
+    font-size: 3.5rem;
+}
+.read_more{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.read_more a{
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.about_l img{
+    width: 100%;
+    max-width: 650px;
+}
+.about_r h1{
+    color: var(--yellow);
+    font-size: 3.5rem;
+}
+/* main articles  */
+.line{
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+    margin-top: 25px;
+}
+
+.articles{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.article{
+    width: 300px;
+    height: auto;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+
+}
+.info span{
+    color: var(--gray);
+    font-size: 12px;
+}
+.opinion .op_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.op_header span a{
+    color: var(--black);
+    font-size: 13px;
+}
+.opinion h3{
+    padding: 15px 0;
+}
+.ops{
+    margin-top: 25px;
+}
 @media (max-width: 737px){
     .navLinks, .searchBtn{
         display: none;
@@ -117,5 +223,8 @@ nav{
         font-size: 3rem;
         line-height: 1;
         padding-bottom: 15px;
+    }
+    .article{
+        width: 100%;
     }
 }
