@@ -79,9 +79,10 @@ nav{
     font-size: 4.5rem;
 }
 .content > p{
-    color: var(--gray);
+    color: var(--black);
     font-weight: 600;
     padding-bottom: 25px;
+    font-size: 30px;
 }
 .btn button{
     padding: 15px 25px;
