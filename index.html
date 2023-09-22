@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Ebo | Blog </title>
 </head>
 <body>
+    <!-- back to top -->
+    <button id="toTop">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
     <header class="paddy">
         <nav>
             <div class="logo">
@@ -35,7 +41,7 @@
         </nav>
         <div class="content">
             <!-- <h1>The social satelite</h1> -->
-            <p>Analysis of research, reports and opinions that <br> matter to African and Global development.</p>
+            <p><span id="typed-output"></span><br>that  matter to African and Global development.</p>
             <div class="btn">
                 <button>Book Appointment</button>
             </div>
@@ -57,19 +63,58 @@
     </header>
     <section id="blog" class="blog">
         <h1 class="blog_caption">Latest Articles</h1>
-        <div class="blog_container paddy">
-            <div class="blog_l">
-                <div class="title">
-                    <span class="num">01</span>
-                    <span class="text">Reports</span>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog_container paddy">
+                    <div class="blog_l">
+                        <div class="title">
+                            <span class="num">01</span>
+                            <span class="text">Reports</span>
+                        </div>
+                    </div>
+                    <div class="blog_r">
+                        <img src="./asset/bg_1.jpg" class="blog_img" alt="">
+                        <div class="read_more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="blog_r">
-                <img src="./asset/bg_1.jpg" class="blog_img" alt="">
-                <div class="read_more">
-                    <a href="#">Read More</a>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_container paddy">
+                    <div class="blog_l">
+                        <div class="title">
+                            <span class="num">02</span>
+                            <span class="text">Research</span>
+                        </div>
+                    </div>
+                    <div class="blog_r">
+                        <img src="./asset/bg_1.jpg" class="blog_img" alt="">
+                        <div class="read_more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog_container paddy">
+                    <div class="blog_l">
+                        <div class="title">
+                            <span class="num">03</span>
+                            <span class="text">Opinions</span>
+                        </div>
+                    </div>
+                    <div class="blog_r">
+                        <img src="./asset/bg_1.jpg" class="blog_img" alt="">
+                        <div class="read_more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <div class="ops paddy">
@@ -250,6 +295,7 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

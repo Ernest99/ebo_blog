@@ -9,6 +9,28 @@
     font-family: 'montserrat';
     scroll-behavior: smooth;
 }
+/* Back to top */
+#toTop{
+    position: fixed;
+    right: -45px;
+    bottom: 50px;
+    background: var(--black);
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    z-index: 99;
+    border-radius: 50%;
+    border: none;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+#toTop i{
+    font-size: 1.5rem;
+}
+.showTop{
+    right: 25px !important;
+    transition: 500ms ease;
+}
 :root{
     --white: #fff;
     --black: #000;
@@ -125,6 +147,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 .blog_r .blog_img{
     width: 100%;
@@ -213,7 +236,43 @@ nav{
 .ops{
     margin-top: 25px;
 }
-@media (max-width: 737px){
+
+
+/* ---------------------- */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--yellow) !important;
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust the margin as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #333; /* Active bullet color */
+}
+@media (max-width: 740px){
     .navLinks, .searchBtn{
         display: none;
     }
@@ -227,5 +286,17 @@ nav{
     }
     .article{
         width: 100%;
+    }
+    .blog_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 650px){
+    .title .num{
+        font-size: 5rem; ;
+    }
+    .title .text{
+        font-size: 2rem;
     }
 }
