@@ -184,7 +184,7 @@ nav{
 }
 .about_l img{
     width: 100%;
-    max-width: 650px;
+    max-width: 950px;
 }
 .about_r h1{
     color: var(--yellow);
@@ -232,6 +232,8 @@ nav{
 }
 .opinion h3{
     padding: 15px 0;
+    font-size: 50px;
+    color: var(--yellow);
 }
 .ops{
     margin-top: 25px;
@@ -287,7 +289,7 @@ nav{
     .article{
         width: 100%;
     }
-    .blog_container {
+    .blog_container, .about_container {
         flex-direction: column;
         flex-wrap: wrap;
     }
