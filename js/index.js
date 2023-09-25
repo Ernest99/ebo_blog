@@ -39,3 +39,20 @@ var back_to_top = document.getElementById('toTop');
 back_to_top.addEventListener('click', function() {
     window.scrollTo(0, 0);
 });
+
+let nav_bar = document.getElementById('nav');
+window.addEventListener('scroll', function(){
+if(this.window.scrollY > 100){
+    nav_bar.classList.add('showNav');
+}else{
+    nav_bar.classList.remove('showNav');
+}
+});
+
+let menu =  document.getElementById('menu_icon');
+let navMenu = document.getElementById('nav_menu');
+let listIcon = document.getElementById('list_icon');
+menu.onclick = () =>{
+    navMenu.classList.toggle('showMenu');
+    listIcon.classList.toggle('bi-x');
+}
