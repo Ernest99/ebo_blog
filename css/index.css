@@ -302,7 +302,7 @@ nav{
         background: var(--white);
         display: none;
         transition: var(--trans);
-        padding: 20px 0;
+        padding: 20px 15px;
         z-index: 10;
     }
     .showMenu{
