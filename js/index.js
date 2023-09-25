@@ -56,3 +56,6 @@ menu.onclick = () =>{
     navMenu.classList.toggle('showMenu');
     listIcon.classList.toggle('bi-x');
 }
+
+let year = new Date().getFullYear();
+document.getElementById('year').textContent = year;

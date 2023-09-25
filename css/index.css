@@ -298,17 +298,20 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    margin-bottom: 20px;
 }
 .footer_container h3{
     padding-bottom: 20px;
+    color: var(--white);
 }
 .item_1 a, .item_3 li a{
-    color: var(--black);
+    color: var(--white);
     display: inline-block;
     margin-top: 5px;
 }
 .item_2 li{
 margin-top: 5px;
+color: var(--white);
 }
 .item_4 > input{
     padding: 10px 20px;
@@ -326,9 +329,43 @@ margin-top: 5px;
     outline: none;
 }
 .copyright{
+    margin-top: 20pxs;
     background: var(--white);
     padding: 2%;
     text-align: center;
+}
+.mail, .infos{
+    text-align: center;
+}
+.mail a{
+    margin-top: 50px;
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+    color: var(--white);
+}
+.contact_info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos{
+    margin-top: 18px;
+}
+.infos p > a{
+    color: var(--white);
+}
+.infos p{
+    margin-bottom: 15px;
+    color: var(--white);
+}
+.infos button{
+    padding: 10px 30px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
 }
 @media (max-width: 740px){
     .searchBtn{
@@ -357,7 +394,9 @@ margin-top: 5px;
         
 
     }
-
+    .mail a{
+        font-size: 1rem;
+    }
     .menuBar{
         display: block;
         z-index: 10;
@@ -375,11 +414,15 @@ margin-top: 5px;
         flex-wrap: wrap;
     }
     footer{
+        padding: 2% 4%;
+        width: 100%;
         height: auto;
     }
+    
     /* .showNav{
         position: static;
-        background: transparent;
+        background: t
+        ransparent;
     } */
 }
 @media (max-width: 650px){
