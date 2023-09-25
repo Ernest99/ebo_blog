@@ -205,6 +205,14 @@ nav{
     color: var(--yellow);
     font-size: 3.5rem;
 }
+.about_r{
+    padding: 5% 0;
+}
+.about_r i{
+    color: var(--black);
+    font-size: 20px;
+    margin-top: 10px;
+}
 /* main articles  */
 .line{
     width: 100%;
@@ -409,9 +417,13 @@ color: var(--white);
     .article{
         width: 100%;
     }
-    .blog_container, .about_container,.footer_container {
+    .blog_container,.footer_container {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .about_container{
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
     }
     footer{
         padding: 2% 4%;
