@@ -289,6 +289,47 @@ nav{
 .swiper-pagination-bullet-active {
     background-color: #333; /* Active bullet color */
 }
+
+footer{
+    width: 100%;
+    background: var(--yellow);
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footer_container h3{
+    padding-bottom: 20px;
+}
+.item_1 a, .item_3 li a{
+    color: var(--black);
+    display: inline-block;
+    margin-top: 5px;
+}
+.item_2 li{
+margin-top: 5px;
+}
+.item_4 > input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: var(--white);
+}
+.item_4 button{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 8px 30px;
+    color: var(--white);
+    background: var(--black);
+    border: none;
+    outline: none;
+}
+.copyright{
+    background: var(--white);
+    padding: 2%;
+    text-align: center;
+}
 @media (max-width: 740px){
     .searchBtn{
         display: none;
@@ -329,9 +370,12 @@ nav{
     .article{
         width: 100%;
     }
-    .blog_container, .about_container {
+    .blog_container, .about_container,.footer_container {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    footer{
+        height: auto;
     }
     /* .showNav{
         position: static;
