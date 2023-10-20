@@ -13,18 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// JS SWIPER
-var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-  });
-
 // back to top
 var back_to_top = document.getElementById('toTop');
 window.addEventListener('scroll', function(){
@@ -59,3 +47,15 @@ menu.onclick = () =>{
 
 let year = new Date().getFullYear();
 document.getElementById('year').textContent = year;
+
+// JS SWIPER
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+  });
