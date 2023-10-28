@@ -51,6 +51,9 @@ header{
 .paddy{
     padding: 2% 4%;
 }
+.item{
+    flex: 1;
+}
 .logo a{
     font-size: 25px;
     color: var(--black);
