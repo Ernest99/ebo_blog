@@ -249,6 +249,7 @@ nav{
 }
 .exp_r h1{
     padding-bottom: 20px;
+    
 }
 .exp_items{
     display: flex;
@@ -488,7 +489,7 @@ color: var(--white);
         line-height: 1;
         padding-bottom: 15px;
     }
-    .article,.exp_items{
+    .article,.exp_item{
         width: 100%;
     }
     .blog_container,.footer_container,.exp_wrapper,.exp_items {
@@ -504,7 +505,9 @@ color: var(--white);
         width: 100%;
         height: auto;
     }
-    
+    .exp_r h1{
+        text-align: center;
+    }
     /* .showNav{
         position: static;
         background: t
