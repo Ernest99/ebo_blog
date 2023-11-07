@@ -130,7 +130,7 @@ nav{
     border: none;
 }
 .socials{
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 }
 .social_media button{
     width: 50px;
@@ -492,7 +492,7 @@ color: var(--white);
     .article,.exp_item{
         width: 100%;
     }
-    .blog_container,.footer_container,.exp_wrapper,.exp_items {
+    .blog_container,.footer_container,.exp_wrapper,.exp_items, .contact_items{
         flex-direction: column;
         flex-wrap: wrap;
     }

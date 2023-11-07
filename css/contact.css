@@ -1,0 +1,62 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --gray: #B0AFAF;
+    --yellow: #dba34e;
+    --trans: all 500ms ease;
+}
+
+.contact_items{
+    display: flex;
+    gap: 18px;
+}
+
+.item{
+    flex: 1;
+}
+form{
+    width: 100%;
+    background: var(--yellow);
+    padding: 20px;
+}
+label{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+
+}
+.inputFields{
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+.inputItem{
+    width: 100%;
+}
+.inputItem > input, .textField > textarea{
+    display: block;
+    width: 100%;
+    padding: 14px 8px;
+    border: none;
+    outline: none;
+    caret-color: #dba34e;
+}
+textarea{
+    resize: none;
+}
+.btnField{
+    margin-top: 15px;
+}
+.btnField button{
+    padding: 10px 25px;
+    background: transparent;
+    outline: none;
+    color: var(--white);
+    border: 1px solid #5c3c0d;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.form_info a, .form_info .infos p{
+    color: #000 !important;
+}
