@@ -351,6 +351,10 @@ nav{
     .opinion h3{
         font-size: 35px;
     }
+    .op_header span a{
+        font-size: 10px;
+        padding: 6px;
+    }
 }
 .ops{
     margin-top: 25px;
