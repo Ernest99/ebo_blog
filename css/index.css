@@ -347,6 +347,11 @@ nav{
     font-size: 50px;
     color: var(--yellow);
 }
+@media(max-width: 469px){
+    .opinion h3{
+        font-size: 35px;
+    }
+}
 .ops{
     margin-top: 25px;
 }
