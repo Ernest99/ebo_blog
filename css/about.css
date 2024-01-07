@@ -1,6 +1,10 @@
 
 .about_caption h1{
+<<<<<<< HEAD
     color: #010101;
+=======
+    color: #dba34e;
+>>>>>>> 68bec26e8269b6c67547539ebb3e40308af43c70
     font-size: 5.5rem;
 }
 .item{
@@ -14,7 +18,11 @@
     padding: 10px 18px;
     border: none;
     color: #fff;
+<<<<<<< HEAD
     background: #010101;
+=======
+    background: #dba34e;
+>>>>>>> 68bec26e8269b6c67547539ebb3e40308af43c70
     outline: none;
     cursor: pointer;
 }
