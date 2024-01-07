@@ -59,5 +59,8 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
       },
   });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 68bec26e8269b6c67547539ebb3e40308af43c70
   
