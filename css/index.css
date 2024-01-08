@@ -577,4 +577,7 @@ color: var(--white);
     .title .text{
         font-size: 2rem;
     }
+    .title{
+        display: none !important;
+    }
 }
