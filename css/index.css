@@ -136,9 +136,10 @@ nav{
 }
 .content > p{
     color: var(--black);
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 25px;
     font-size: 30px;
+    line-height: 1.1;
 }
 .btn button{
     padding: 15px 25px;
@@ -185,6 +186,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+    background: #F5F6F6;
 }
 .blog_r .blog_img{
     width: 100%;
