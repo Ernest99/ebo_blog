@@ -318,12 +318,17 @@ nav{
 }
 
 .article{
+    position: relative;
     width: 450px;
     height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px 20px;
     border-bottom: 2px solid #010101;
     border-radius: 3px;
+}
+.below{
+    position: absolute;
+    bottom: 18px;
 }
 .article_img{
     width: 100%;
