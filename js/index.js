@@ -1,7 +1,7 @@
 // JavaScript code to create the typewriter effect
 document.addEventListener('DOMContentLoaded', function() {
     const options = {
-        strings: ["Analysis of research", "reports", "and opinions"],
+        strings: ["The greatest", "The greatest", "The greatest"],
         typeSpeed: 50,    // typing speed in milliseconds
         backSpeed: 25,    // backspacing speed in milliseconds
         startDelay: 500,  // delay before typing starts in milliseconds
