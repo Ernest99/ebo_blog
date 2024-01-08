@@ -341,6 +341,7 @@ nav{
     border-radius: 3px;
 }
 .below{
+    width: 80%;
     position: absolute;
     bottom: 18px;
 }
